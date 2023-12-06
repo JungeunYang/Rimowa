@@ -1,0 +1,444 @@
+@charset 'utf-8';
+
+/* 웹폰트정의 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+
+:root {
+  --main-color: #d9d9d9;
+  --light-gray-bg: #f2f2ef;
+  --text-color-w: #fff;
+  --text-color-b: #000;
+  --line-color-w: rgba(255, 255, 255, 0.5);
+  --line-color-b: rgba(0, 0, 0, 0.5);
+  --trs: 0.3s;
+}
+
+html {
+  font-size: 62.5%; /* 1rem을 10px로 만드는 명령 */
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 1.7rem/1.5 'Roboto', 'Pretendard', sans-serif;
+  color: var(--text-color);
+  word-break: keep-all; /* wbka : 어절 단위 줄바꿈 */
+  text-transform: capitalize; /* ttc */
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+hr,
+.hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+::selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+.inner {
+  width: 130rem;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 0.3s;
+}
+#header.hide {
+  top: -100px;
+}
+#header .inner {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 88.6979%;
+  margin: 0 auto;
+}
+
+.logo a {
+  display: block;
+  width: 14.6rem;
+  aspect-ratio: 1/0.21;
+  background: url(../img/logo.png) no-repeat 50% / contain;
+}
+
+.btn-menu {
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: url(../img/ico-menu.svg) no-repeat 50% / cover;
+  display: none;
+}
+
+.btn-search {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background: url(../img/ico-search.svg) no-repeat 50% / cover;
+  display: none;
+}
+
+.btn-cart {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background: url(../img/ico-cart.svg) no-repeat 50% / cover;
+  display: none;
+}
+
+.gnb {
+  display: flex;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.gnb li a {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 2.3rem;
+  position: relative;
+}
+
+.gnb li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 0%;
+  height: 0.4rem;
+  background: #fff;
+  transition: var(--trs);
+}
+
+.gnb li a:hover::after {
+  width: 85%;
+}
+
+#footer {
+  background: #000;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5.5rem 0;
+}
+.foot-logo {
+  display: block;
+  width: 4rem;
+  height: 5rem;
+  background: url(../img/foot-logo.svg) no-repeat 50% / contain;
+  margin: 0 auto;
+}
+.foot-con {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.foot-con address {
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.foot-con address strong {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.foot-con address p {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.foot-con address + p {
+  margin-top: 1.5rem;
+}
+.foot-con address + p .copy {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.foot-con address + p em {
+  display: block;
+  font-size: 1.3rem;
+}
+.foot-con .sns-list {
+  display: flex;
+  gap: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.foot-con .sns-list li a {
+  display: block;
+  bottom: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: no-repeat 50% / contain;
+}
+.foot-con .sns-list li:nth-child(1) a {
+  background-image: url(../img/sns-pic01.svg);
+}
+.foot-con .sns-list li:nth-child(2) a {
+  background-image: url(../img/sns-pic02.svg);
+}
+.foot-con .sns-list li:nth-child(3) a {
+  background-image: url(../img/sns-pic03.svg);
+}
+.foot-con .sns-list li:nth-child(4) a {
+  background-image: url(../img/sns-pic04.svg);
+}
+.foot-con .sns-list li:nth-child(5) a {
+  background-image: url(../img/sns-pic05.svg);
+}
+.foot-con .sns-list li:nth-child(6) a {
+  background-image: url(../img/sns-pic06.svg);
+}
+.foot-con .sns-list li:nth-child(7) a {
+  background-image: url(../img/sns-pic07.svg);
+}
+
+/* 반응형 분기점 */
+
+@media (max-width: 1550px) {
+  .inner {
+    width: 92.549%;
+  }
+}
+/* 태블릿 디자인 */
+@media (max-width: 1024px) {
+  #header .inner {
+    width: 92.549%;
+  }
+
+  nav {
+    justify-content: space-between;
+    width: 95%;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .logo a {
+    width: 30vw;
+    aspect-ratio: 1/0.7575;
+    background-position: 50% 0;
+    background-size: contain;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+  .gnb {
+    display: none;
+  }
+  .util {
+    display: flex;
+    gap: 3rem;
+  }
+  .btn-search {
+    display: block;
+  }
+  .btn-cart {
+    display: block;
+  }
+}
+
+/* 추가 분기점 생성 */
+@media (max-width: 800px) {
+  #footer {
+    background: #000;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 6rem 0;
+  }
+  .foot-logo {
+    display: block;
+    width: 3rem;
+    height: 4rem;
+    background: url(../img/foot-logo.svg) no-repeat 50% / contain;
+    margin: 0 auto;
+  }
+  .foot-con {
+    flex-direction: column;
+    height: 26rem;
+  }
+
+  .foot-con address {
+    display: block;
+    margin-top: 2.5rem;
+    text-align: center;
+    gap: 0.4rem;
+  }
+
+  .foot-con address + p {
+    text-align: center;
+  }
+  .foot-con .sns-list {
+    display: flex;
+    gap: 0.4rem;
+    position: static;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 630px) {
+  .btn-menu {
+    width: 4rem;
+    height: 4rem;
+  }
+  .btn-search,
+  .btn-cart {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .inner {
+    width: 89.7435%;
+  }
+  #header .inner {
+    width: 89.7435%;
+  }
+  #header .inner nav {
+    justify-content: space-between;
+  }
+  nav {
+    width: 92%;
+    height: 9rem;
+  }
+  .logo a {
+    width: 13.8rem;
+    height: 2.41rem;
+    top: 3.5rem;
+  }
+  .btn-menu {
+    width: 4rem;
+    height: 4rem;
+  }
+  .gnb {
+    display: none;
+  }
+  .util {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .btn-menu {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .btn-search,
+  .btn-cart {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+/* 모바일 디자인 */
+@media (max-width: 400px) {
+  .btn-menu {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .logo a {
+    width: 13rem;
+    height: 2.271rem;
+  }
+  .btn-menu {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .btn-search,
+  .btn-cart {
+    width: 2.5rem;
+    height: 2.3rem;
+  }
+  .foot-con {
+    height: 23rem;
+  }
+
+  .foot-con address strong {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .foot-con address p {
+    font-size: 1.3rem;
+  }
+
+  .foot-con address + p {
+    margin-top: 1.5rem;
+  }
+  .foot-con address + p .copy {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .foot-con address + p em {
+    display: block;
+    font-size: 1.1rem;
+  }
+  .foot-con .sns-list {
+    margin-top: 2rem;
+  }
+
+  .foot-con .sns-list li a {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .inner {
+    width: 95%;
+  }
+  nav {
+    width: 97%;
+  }
+  .logo a {
+    width: 13rem;
+    height: 2.271rem;
+  }
+  .util {
+    gap: 1rem;
+  }
+}

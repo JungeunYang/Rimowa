@@ -1,0 +1,1161 @@
+@charset 'utf-8';
+
+#header {
+  background: #000;
+}
+
+body {
+  font-size: 2.8rem; /* fz2r */
+}
+
+/* heritage-visual */
+
+.heritage-visual {
+  position: relative;
+  color: #fff;
+  height: 100vh;
+}
+.heritage-visual figure {
+  height: 100%;
+}
+.heritage-visual figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.heritage-visual h3 {
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: 500;
+  top: 20.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.heritage-visual p {
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: 500;
+  bottom: 5.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.heritage-visual p strong {
+  display: block;
+  margin-top: 1rem;
+}
+.heritage-visual p strong img {
+  width: 32rem;
+  height: 5.589rem;
+}
+
+/* travel-definition */
+.travel-definition {
+  height: 100vh;
+  background: var(--light-gray-bg);
+}
+.travel-definition .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.travel-definition .definition {
+  width: 61.5384%; /* 800px */
+  text-align: center;
+}
+
+.definition h4 {
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+.definition p {
+  margin-top: 8rem;
+}
+.definition strong {
+  display: block;
+  margin-top: 5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.ri-double-quotes-l,
+.ri-double-quotes-r {
+  font-size: 2.5rem;
+}
+
+/* rimowa-history */
+.rimowa-history {
+  background: var(--light-gray-bg);
+  padding: 27rem 0;
+  width: 100%;
+}
+.rimowa-history .sec-title {
+  text-align: center;
+}
+.rimowa-history .sec-title h4 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.rimowa-history .sec-title p {
+  font-size: 4rem;
+  font-weight: 500;
+}
+/* history-con */
+.history-con {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: space-between;
+  max-width: 1920px;
+}
+
+/* chronology */
+.chronology::before {
+  content: '';
+  display: block;
+  width: 0.6rem;
+  height: 75rem;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+}
+.chronology {
+  width: 21.875%;
+  margin-left: 5.3645833%; /* 103px */
+  position: sticky;
+  top: 15%;
+  left: 0;
+  /* background: #ff5; */
+  height: 86rem;
+}
+.chronology li {
+  margin-top: 1.4rem;
+}
+
+.chronology li:nth-child(1) em {
+  display: block;
+  margin-top: 2rem;
+  color: #000;
+  font-size: 4rem;
+}
+
+.chronology li em {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-left: 2rem;
+}
+.chronology::after {
+  content: '';
+  display: block;
+  width: 0.6rem;
+  height: 10rem;
+  background: #000;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+}
+
+/* rimowa-history-cards */
+.card-list {
+  position: relative;
+  width: 78.125%; /* 1500px */
+}
+.card-list li:nth-of-type(odd) {
+  height: 86rem;
+  background: #000;
+  border-radius: 5rem;
+  margin-top: 5rem;
+}
+.card-list li:nth-of-type(1) {
+  margin-top: 0;
+}
+.card-list li:nth-of-type(even) {
+  height: 86rem;
+  background: #fff;
+  border-radius: 5rem;
+  margin-top: 5rem;
+}
+.card-list dl dt {
+  font-size: 4rem;
+  font-weight: 700rem;
+}
+.card-list li:nth-of-type(even) dd {
+  color: #000;
+}
+.card-list li:nth-of-type(even) dt {
+  font-weight: 700;
+}
+
+.card-list li dl dd {
+  margin-top: 4rem;
+}
+.card-list li:nth-of-type(odd) dl dt,
+dd {
+  color: #fff;
+}
+.card-list li:nth-of-type(odd) dl dt {
+  font-weight: 700;
+}
+
+/* rimowa-history-cards:card-01 */
+.card-list .card-01 {
+  display: flex;
+  align-items: center;
+  padding: 11.4rem 10rem;
+  justify-content: space-between;
+}
+.card-01 dl {
+  width: 46.6666%; /* 700px */
+}
+.card-01 figure {
+  width: 36.4615%;
+}
+.card-01 figure img {
+  width: 100%;
+  height: 100%;
+}
+/* rimowa-history-cards:card-02 */
+.card-02 {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  padding: 15rem 10rem;
+  justify-content: space-between;
+}
+.card-con {
+  width: 49.538461%; /* 644px */
+}
+
+.card-02 dl {
+  width: 48.461538%; /* 630px */
+  margin-top: 0;
+}
+.card-02 dl dt {
+  margin-top: 4rem;
+}
+
+.card-con figure:nth-child(1) {
+  width: 44.42652%; /* 285.87px */
+  height: 11.238rem;
+  margin: 0 auto;
+}
+.card-con figure:nth-child(2) {
+  width: 100%;
+  height: auto;
+  margin-top: 4.1rem;
+}
+
+/* rimowa-history-cards:card-03 */
+
+.card-03 {
+  align-items: center;
+  text-align: center;
+  padding: 13.3rem 10rem;
+}
+
+.card-03 dl {
+  width: 85.461538%; /* 102rem */
+  margin: 0 auto;
+}
+.pic-wrap {
+  display: flex;
+  width: 86.6667%; /* 129.9rem */
+  height: 31.533rem;
+  margin: 9.2rem auto 0;
+}
+.pic-wrap figure {
+  width: 100%;
+  aspect-ratio: 1/1.295545062;
+}
+.pic-wrap figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* rimowa-history-cards:card-04 */
+
+.card-04 {
+  padding: 14.3rem 10.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-04 dl {
+  width: 63.84615384%; /* 83rem */
+}
+.card-04 figure {
+  width: 19.895833vw; /* 38.2rem */
+}
+
+/* rimowa-history-cards:card-05 */
+
+.card-05 {
+  padding: 19.5rem 10rem;
+  align-items: center;
+  text-align: center;
+}
+.card-05 strong {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.card-05 ul {
+  display: flex;
+  margin: 12.8rem auto;
+  width: 90%;
+}
+.card-list .card-05 ul li {
+  width: 33.3333%; /* 36rem */
+  height: 22rem;
+  margin-top: 0;
+  background: #000;
+}
+.card-05 ul li figure {
+  width: 40%;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+}
+.card-05 ul li dl dt {
+  font-size: 2.5rem;
+}
+.card-list .card-05 ul li dl dd {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+/* rimowa-history-cards:card-06 */
+
+.card-06 {
+  padding: 0rem 10rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-06-con1 {
+  width: 48%;
+}
+.card-06-con1 dl {
+  margin-top: 4rem;
+}
+
+.card-06-con1 dl dt,
+.card-06-con2 dl dt {
+  font-size: 3.5rem;
+}
+.card-list .card-06-con1 dl dd,
+.card-list .card-06-con2 dl dd {
+  font-size: 2.8rem;
+  margin-top: 2rem;
+}
+.card-06-con2 {
+  width: 45%;
+  align-self: flex-end;
+}
+.card-06-con2 figure {
+  margin: 4rem auto 0;
+}
+
+/* rimowa-history-cards:card-07 */
+
+.card-07 {
+  padding: 20.3rem 12.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-07-pic {
+  display: flex;
+  gap: 1rem;
+  width: 46.4286%;
+}
+.card-07-pic figure {
+  width: 49.0842%;
+}
+
+.card-07 {
+  color: #fff;
+  text-align: right;
+  align-items: center;
+}
+
+.card-07 strong {
+  display: block;
+  width: 45%;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* rimowa-history-cards:card-08 */
+.card-08 {
+  padding: 12.6rem 18rem;
+  text-align: center;
+  align-items: center;
+}
+.card-08 strong {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 61.20283%;
+}
+.card-08-pic {
+  display: flex;
+  margin-top: 5vw;
+  justify-content: space-between;
+}
+.card-08-pic figure {
+  width: 33%;
+}
+
+/* rimowa-history-cards:card-09 */
+.card-09 {
+  padding: 16rem 14rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.card-09 dl {
+  width: 59.196721%; /* 710px */
+}
+
+.card-09 figure {
+  width: 33.3333%;
+}
+
+/* heritage-end */
+.end-pic02 {
+  width: 60%;
+  background: #ff5;
+  position: relative;
+  background: url(../img-sub/heritage-last-02.jpg) no-repeat 0 0 / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1.104888888;
+}
+.end-pic02::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+.end-pic02 img {
+  width: 61.86865%; /* 700px */
+  z-index: 1;
+  filter: drop-shadow(6px 6px 10px #5f5f5f);
+}
+.end-con {
+  display: flex;
+}
+.end-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.end-con dl {
+  margin: auto 7rem auto 10rem;
+}
+.end-con dl dt {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.end-con dl dd {
+  color: #000;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+
+/* 반응형 분기점 */
+
+@media (max-width: 1512px) {
+  .card-list dl dt {
+    font-size: 3.5rem;
+  }
+  .card-list dl dd {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .definition h4 {
+    font-size: 3.6rem;
+  }
+  .definition p {
+    margin-top: 4.2372vw;
+    font-size: 2.2rem;
+  }
+  .definition strong {
+    margin-top: 4.2372vw;
+    font-size: 3.2rem;
+  }
+}
+
+/* 태블릿 디자인 */
+@media (max-width: 1024px) {
+  .heritage-visual h3 {
+    font-size: 3.2rem;
+  }
+
+  .heritage-visual p {
+    font-size: 3.2rem;
+  }
+
+  .heritage-visual p strong img {
+    width: 26rem;
+    height: auto;
+    margin-top: 0;
+  }
+  .travel-definition .definition {
+    width: 84.6829681%; /* 800px */
+  }
+
+  /* 태블릿:chronology */
+  .chronology {
+    width: 19.7265625%;
+  }
+
+  .chronology li:nth-child(1) em {
+    font-size: 3.2rem;
+  }
+
+  .chronology li em {
+    font-size: 2.2rem;
+  }
+  /* 태블릿:rimowa-history-cards */
+  .card-list {
+    position: relative;
+    width: 80.0234375%;
+  }
+  .card-list li:nth-of-type(odd) {
+    height: auto;
+    border-radius: 2.5rem;
+    margin-top: 2rem;
+  }
+  .card-list li:nth-of-type(1) {
+    margin-top: 0;
+  }
+  .card-list li:nth-of-type(even) {
+    height: auto;
+    border-radius: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .card-list dl dt {
+    font-size: 2.8rem;
+  }
+  .card-list li dl dd {
+    margin-top: 2.2rem;
+    font-size: 1.8rem;
+  }
+
+  /* 태블릿:rimowa-history-cards:card-01 */
+  .card-list .card-01 {
+    padding: 6.2rem 5.45rem;
+  }
+
+  /* 태블릿:rimowa-history-cards:card-02 */
+  .card-02 {
+    padding: 8.35rem 5.2rem;
+    align-items: center;
+  }
+  .card-02 dl {
+    width: 48.461538%; /* 630px */
+    margin-top: 0;
+  }
+  .card-02 dl dt {
+    margin-top: 2.2rem;
+  }
+  .card-con figure:nth-child(1) {
+    width: 44.42652%; /* 285.87px */
+    height: 6.146rem;
+    margin: 0 auto;
+  }
+  .card-con figure:nth-child(2) {
+    width: 100%;
+    height: 21.9rem;
+    margin-top: 2.3rem;
+  }
+
+  /* 태블릿:rimowa-history-cards:card-03 */
+
+  .card-03 {
+    padding: 7.4rem 5.5rem;
+  }
+  .card-03 dl {
+    width: 95%; /* 102rem */
+  }
+
+  .pic-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    height: auto;
+    margin-top: 3.548rem;
+  }
+
+  .pic-wrap figure {
+    flex: 1 1 30%;
+    min-width: 16rem;
+  }
+
+  /* 태블릿:rimowa-history-cards:card-05 */
+  .card-05 {
+    padding: 9rem 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  .card-05 strong {
+    font-size: 2.8rem;
+  }
+  .card-05 ul {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .card-05 ul li dl {
+    margin-top: 0.7rem;
+  }
+
+  .card-05 ul li dl dt {
+    font-size: 2rem;
+  }
+  .card-list .card-05 ul li dl dd {
+    font-size: 1.6rem;
+    margin-top: 0.7rem;
+  }
+
+  /* 태블릿:rimowa-history-cards:card-06 */
+
+  .card-06 {
+    padding: 0rem 5rem;
+  }
+
+  .card-06-con1 dl {
+    margin-top: 3rem;
+  }
+
+  .card-06-con1 dl dt,
+  .card-06-con2 dl dt {
+    font-size: 2.5rem;
+  }
+  .card-list .card-06-con1 dl dd,
+  .card-list .card-06-con2 dl dd {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .card-06 figure {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card-06-con2 figure {
+    margin: 3rem auto 0;
+  }
+
+  /* 태블릿:rimowa-history-cards:card-07 */
+
+  .card-07 {
+    padding: 8.6rem 4rem;
+  }
+
+  .card-07-pic figure {
+  }
+
+  .card-07 strong {
+    font-size: 2.8rem;
+  }
+  /* 태블릿:rimowa-history-cards:card-08 */
+  .card-08 {
+    padding: 7rem 9.6rem;
+  }
+
+  .card-08 strong {
+    display: block;
+    width: 100%;
+    font-size: 2.8rem;
+  }
+
+  /* 태블릿:rimowa-history-cards:card-09 */
+
+  .card-09 {
+    padding: 8.95rem 7.25rem;
+  }
+
+  /* 태블릿:heritage-end */
+  .end-pic02 {
+    width: 50%;
+  }
+  .end-text {
+    width: 50%;
+  }
+  .end-con dl dt {
+    font-size: 2.8rem;
+  }
+  .end-con dl dd {
+    font-size: 2rem;
+    margin-top: 1.8rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .chronology {
+    width: 15%;
+  }
+
+  .chronology li:nth-child(1) em {
+    font-size: 2.8rem;
+  }
+
+  .chronology li em {
+    font-size: 2rem;
+  }
+  .card-list {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .card-list li:nth-of-type(odd) {
+    height: auto;
+    border-radius: 2.5rem;
+    margin-top: 5rem;
+  }
+  .card-list li:nth-of-type(1) {
+    margin-top: 0;
+  }
+  .card-list li:nth-of-type(even) {
+    height: auto;
+    border-radius: 2.5rem;
+    margin-top: 5rem;
+  }
+  .card-list dl {
+    width: 62%;
+  }
+
+  .card-list dl dt {
+    font-size: 2.4rem;
+  }
+  .card-list li dl dd {
+    font-size: 1.6rem;
+  }
+  .card-01 figure {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  .card-con {
+    width: 75%;
+  }
+  .card-con figure:nth-child(1) {
+    width: 80%;
+    height: auto;
+  }
+
+  .card-con figure:nth-child(2) {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-02 dl {
+    width: 85%;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .card-02 dl dt {
+    margin-top: 2.5rem;
+  }
+  .card-04 figure {
+    width: 40%;
+  }
+  .card-04 {
+    padding: 6.2rem 5.45rem;
+  }
+
+  .card-list .card-05 ul li {
+    width: 90%;
+    height: auto;
+    padding: 1vw 0;
+  }
+  .card-05 strong {
+    font-size: 2.4rem;
+  }
+  .card-list .card-05 ul li dl {
+    width: 100%;
+  }
+  .card-06-con1 {
+    padding: 0 0 10vw 0;
+  }
+  .card-list .card-06-con1 > dl {
+    width: 100%;
+  }
+  .card-list .card-06-con2 > dl {
+    width: 100%;
+  }
+  .card-07 strong {
+    font-size: 2.4rem;
+  }
+  .card-08 strong {
+    font-size: 2.4rem;
+  }
+  .end-con dl dt {
+    font-size: 2.6rem;
+  }
+  .end-con dl dd {
+    font-size: 2rem;
+  }
+  .end-con dl {
+    margin: auto 7.4468vw auto 10.63829vw;
+  }
+}
+@media (max-width: 800px) {
+  .end-con dl dt {
+    font-size: 2.4rem;
+  }
+  .end-con dl dd {
+    font-size: 1.8rem;
+  }
+  .card-list .card-05 ul {
+    display: block;
+
+    align-items: center;
+  }
+  .card-list .card-05 ul li {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    gap: 0rem;
+  }
+  .card-05 ul li figure {
+    width: 40%;
+  }
+  .card-list .card-05 ul li dl {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .card-list dl {
+    width: 64%;
+  }
+  .card-02 dl {
+    margin-top: -2rem;
+  }
+  .card-04 {
+    padding: 9.5rem 4.5rem;
+  }
+  .end-con dl dt {
+    font-size: 2.2rem;
+  }
+  .end-con dl dd {
+    font-size: 1.6rem;
+  }
+}
+
+/* 모바일 디자인 */
+@media (max-width: 630px) {
+  .heritage-visual h3 {
+    font-size: 3rem;
+  }
+
+  .heritage-visual p {
+    font-size: 3rem;
+  }
+  .heritage-visual p strong img {
+    width: 24rem;
+  }
+
+  /* 모바일:travel-definition */
+  .travel-definition {
+    height: auto;
+  }
+  .travel-definition .definition {
+    padding: 20vw 0;
+  }
+
+  .definition h4 {
+    font-size: 2.8rem;
+  }
+  .definition p {
+    margin-top: 3.8rem;
+    font-size: 2rem;
+  }
+  .definition strong {
+    margin-top: 3.8rem;
+    font-size: 2.4rem;
+  }
+  .chronology {
+    display: none;
+  }
+  .card-list dl {
+    width: 85%;
+  }
+
+  /* 모바일:heritage-end */
+  .end-con {
+    display: block;
+  }
+  .end-text {
+    width: 100%;
+  }
+  .end-con dl {
+    margin: 0 auto;
+    padding: 9.5rem 4rem;
+    text-align: center;
+  }
+
+  .end-pic02 {
+    width: 100%;
+  }
+
+  .end-con dl dd {
+    font-size: 1.8rem;
+    margin-top: 3.8rem;
+  }
+  .end-pic02 img {
+    width: 65%;
+  }
+}
+@media (max-width: 600px) {
+  .card-list li dl dd {
+    margin-top: 4.5rem;
+  }
+  .card-list .card-01 {
+    display: block;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  /* 모바일:rimowa-history-cards:card-02 */
+  .card-02 {
+    display: block;
+  }
+  .card-con {
+    width: 75%;
+    margin: 0 auto;
+  }
+  /* 모바일:rimowa-history-cards:card-04 */
+
+  .card-04 {
+    display: block;
+  }
+  .card-04 dl {
+    width: 100%;
+  }
+  .card-04 figure {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  .card-06 {
+    display: block;
+  }
+  .card-06-con1 {
+    width: 100%;
+  }
+  .card-06-con2 {
+    width: 100%;
+    margin-top: 6rem;
+  }
+
+  /* 모바일:rimowa-history-cards:card-09 */
+  .card-list dl {
+    width: 100%;
+  }
+
+  .card-list .card-09 {
+    display: block;
+    text-align: center;
+  }
+
+  .card-09 figure {
+    width: 70%;
+    margin: 0rem auto 0;
+  }
+}
+
+/* 모바일 디자인 */
+@media (max-width: 500px) {
+  .heritage-visual h3 {
+    font-size: 3.2rem;
+    top: 21rem;
+  }
+  .heritage-visual p {
+    font-size: 3rem;
+    bottom: 7rem;
+  }
+  .heritage-visual p strong {
+    width: 23rem;
+  }
+  .heritage-visual p strong img {
+    object-fit: contain;
+  }
+
+  .ri-double-quotes-l,
+  .ri-double-quotes-r {
+    font-size: 1.5rem;
+  }
+  /* 모바일:chronology */
+
+  .rimowa-history {
+    background: var(--light-gray-bg);
+    padding: 20vw 0;
+    width: 100%;
+  }
+  .rimowa-history .sec-title h4 {
+    font-size: 1.8rem;
+  }
+  .rimowa-history .sec-title p {
+    font-size: 3rem;
+  }
+
+  .history-con {
+    display: flex;
+    margin-top: 7rem;
+  }
+
+  /* 모바일:rimowa-history-cards */
+
+  .card-list dl dt {
+    font-size: 2.2rem;
+  }
+  .card-list li dl dd {
+    font-size: 1.6rem;
+  }
+
+  /* 모바일:rimowa-history-cards:card-01 */
+  .card-list .card-01 {
+    display: block;
+    text-align: center;
+    padding: 9.5rem 4.5rem;
+    flex-direction: column;
+  }
+
+  /* 모바일:rimowa-history-cards:card-02 */
+  .card-02 {
+    padding: 9.5rem 3rem;
+    display: block;
+  }
+
+  /* 모바일:rimowa-history-cards:card-03 */
+
+  .card-03 {
+    padding: 8rem 3rem;
+  }
+  .card-03 dl {
+    width: 100%; /* 102rem */
+  }
+  .pic-wrap figure {
+    flex: 1 1 50%;
+    min-width: 9rem;
+  }
+
+  /* 모바일:rimowa-history-cards:card-05 */
+  .card-05 {
+    padding: 9.5rem 4rem;
+    display: block;
+  }
+
+  .card-05 strong {
+    font-size: 2.2rem;
+  }
+  .card-05 ul {
+    display: block;
+    width: 100%;
+
+    margin-top: 5rem;
+  }
+  .card-list .card-05 ul li {
+    width: 100%;
+    height: auto;
+    background: #000;
+    margin-top: 3rem;
+  }
+  .card-05 ul li dl {
+    margin-top: 0.5rem;
+  }
+
+  /* 모바일:rimowa-history-cards:card-06 */
+
+  .card-06 {
+    padding: 0rem 4.5rem;
+  }
+
+  .card-06-con2 {
+    margin-top: 6rem;
+  }
+  .card-06-con1 dl dt,
+  .card-06-con2 dl dt {
+    font-size: 2.2rem;
+  }
+
+  /* 모바일:rimowa-history-cards:card-07 */
+  .card-07 {
+    text-align: center;
+    display: block;
+    padding: 9.5rem 4.5rem;
+  }
+  .card-07-pic {
+    display: flex;
+    gap: 1rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .card-07 strong {
+    width: 100%;
+    margin-top: 5rem;
+    font-size: 2.2rem;
+  }
+
+  /* 모바일:rimowa-history-cards:card-08 */
+  .card-08 {
+    padding: 9.5rem 4.5rem;
+  }
+  .card-08 strong {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  .card-08-pic {
+    overflow-x: auto;
+  }
+  .card-08-pic figure {
+  }
+
+  /* 모바일:rimowa-history-cards:card-09 */
+
+  .card-09 {
+    padding: 9.5rem 4.5rem;
+    display: block;
+    text-align: center;
+  }
+  .card-09 figure {
+    width: 70%;
+    margin: 5rem auto 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .card-list .card-05 ul li {
+    display: block;
+  }
+  .card-05 ul li figure {
+    width: 35%;
+  }
+  .definition h4 {
+    font-size: 2.6rem;
+  }
+  .definition p {
+    margin-top: 3.8rem;
+    font-size: 1.8rem;
+  }
+  .definition strong {
+    margin-top: 3.8rem;
+    font-size: 2.2rem;
+  }
+}
