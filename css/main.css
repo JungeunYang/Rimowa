@@ -357,9 +357,9 @@
   flex-wrap: wrap;
 }
 
-.story-list li figure {
+/* .story-list li figure {
   overflow: hidden;
-}
+} */
 
 .story-list li figure img {
   transition: 0.4s;
@@ -958,7 +958,7 @@
     margin-top: 2.2rem;
   }
 
-  .story-list {
+  /*   .story-list {
     margin-top: 4.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -972,8 +972,8 @@
     height: 100%;
     object-fit: cover;
     transition: 0.4s;
-  }
-
+  } */
+  /* 
   .story-list li figure:hover img {
     transform: scale(115%);
   }
@@ -981,7 +981,7 @@
   .story-list li:nth-child(2),
   .story-list li:nth-child(3) {
     display: none;
-  }
+  } */
 
   /* mobile-journal */
   .journal {
