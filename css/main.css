@@ -357,9 +357,9 @@
   flex-wrap: wrap;
 }
 
-/* .story-list li figure {
+.story-list li figure {
   overflow: hidden;
-} */
+}
 
 .story-list li figure img {
   transition: 0.4s;
